@@ -17,6 +17,17 @@ header a {
   border-bottom: #aeaeae 1px solid;
 }
 
+#services .text-container h3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 80px;
+  border-bottom: #6f6f6f 1px solid;
+}
+
 .about-content img {
   height: 180px;
   width: 180px;
