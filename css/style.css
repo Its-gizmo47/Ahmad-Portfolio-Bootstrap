@@ -1,0 +1,41 @@
+header {
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/header-background.jpg) center center no-repeat;
+}
+
+header a {
+  color: #f4f4f4;
+}
+
+.text-container h4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 200px;
+  border-bottom: #aeaeae 1px solid;
+}
+
+.about-content img {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+}
+
+#services {
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/bg.jpg) center center no-repeat;
+}
+
+@media (max-width: 767px) {
+  header h5 {
+    font-size: 16px;
+  }
+  .text-container h4::after {
+    width: 150px;
+  }
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
